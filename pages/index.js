@@ -25,7 +25,12 @@ export default function Home() {
       <Box>
         <h1>WBHC Beer Festival 2022</h1>
       </Box>
-      <Grid container spacing={2} sx={{ background: "#F5B301" }}>
+      <Grid
+        container
+        spacing={3}
+        sx={{ background: "#F5B301", pt: "20px" }}
+        justifyContent='center'
+      >
         {beerData.map((beer) => (
           <Grid item key={beer.id}>
             <BeerCard
@@ -36,6 +41,7 @@ export default function Home() {
               description={beer.description}
               style={beer.style}
               alcohol={beer.alcohol}
+              status={beer.status}
             />
           </Grid>
         ))}
