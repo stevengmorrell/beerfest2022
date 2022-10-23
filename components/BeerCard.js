@@ -7,9 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 
-const BeerCard = ({ img, name, description, style, alcohol }) => {
+const BeerCard = ({ img, name, description, style, alcohol, status }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, pt: "30px" }}>
       <CardMedia
         component='img'
         height='100%'
@@ -17,9 +17,20 @@ const BeerCard = ({ img, name, description, style, alcohol }) => {
         alt='Magpie Best'
       />
       <CardContent>
-        <Typography gutterBottom variant='h5' component='div'>
-          {name}
-        </Typography>
+        {status ? (
+          <Typography gutterBottom variant='h5' component='div'>
+            {name}
+          </Typography>
+        ) : (
+          <Typography
+            gutterBottom
+            variant='h5'
+            component='div'
+            sx={{ "text-decoration": "line-through" }}
+          >
+            {name}
+          </Typography>
+        )}
         <Typography variant='body2' color='text.secondary'>
           {style}
         </Typography>
