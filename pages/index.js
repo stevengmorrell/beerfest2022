@@ -12,6 +12,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import BeerCard from "../components/BeerCard";
+import Logo from "../public/images/WBHCLogo.jpg";
 
 import beerData from "../json/beerData.json";
 
@@ -34,7 +35,7 @@ export default function Home() {
           <Card sx={{ marginBottom: "20px" }}>
             <Box sx={{ width: "200px", height: "200px", position: "relative" }}>
               <Image
-                src={"/images/WBHCLogo.jpg"}
+                src={Logo}
                 alt={"WBHC Logo"}
                 layout='fill'
                 objectFit='contain'
