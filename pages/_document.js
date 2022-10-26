@@ -22,7 +22,7 @@ export default function Document() {
           sizes='16x16'
           href='/images/favicon-16x16.png'
         />
-        <link rel='manifest' href='/images/site.webmanifest' />
+        <link rel='manifest' href='/manifest.json' />
 
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -30,6 +30,7 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Roboto&display=swap'
           rel='stylesheet'
         />
+        <meta name='theme-color' content='#FFC40A' />
       </Head>
       <body>
         <Main />
