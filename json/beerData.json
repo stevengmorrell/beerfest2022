@@ -1,83 +1,173 @@
 [
   {
-    "alcohol": 6.8,
-    "description": "Affligem Blonde, the classic clear blonde abbey ale, with a gentle roundness and 6.8% alcohol. Low on bitterness, it is eminently drinkable.",
-    "id": "AffligemBlond",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Affligem Blond",
+    "alcohol": 5.0,
+    "description": "An extremely pleasant bitter, straw coloured beer with a terrific fresh, hoppy aroma.",
+    "id": "HopbackSummerLightning",
+    "img": "/images/summerlightning.png",
+    "name": "Hopback Summer Lightning",
     "style": "A - Pale",
     "status": true
   },
   {
-    "alcohol": 6.8,
-    "description": "A reddish-brown abbey ale brewed with dark malts. The secondary fermentation gives a fruity aroma and a unique spicy character with a distinctive aftertaste. Secondary fermentation in the bottle.",
-    "id": "AffligemDubbel",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Affligem Dubbel",
-    "style": "B - Copper",
-    "status": false
-  },
-  {
-    "alcohol": 8.5,
-    "description": "The king of the abbey beers. It is amber-gold and pours with a deep head and original aroma, delivering a complex, full bodied flavour. Pure enjoyment! Secondary fermentation in the bottle.",
-    "id": "AffligemTripel",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Affligem Tripel",
-    "style": "C - Amber",
-    "status": true
-  },
-  {
-    "alcohol": 7.5,
-    "description": "Trappistes Rochefort 6 Belgian Beer.",
-    "id": "TrappistesRochefort6",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Rochefort 6",
-    "style": "D - Dark",
-    "status": true
-  },
-  {
-    "alcohol": 9.2,
-    "description": "A dry but rich flavoured beer with complex fruity and spicy flavours.",
-    "id": "TrappistesRochefort8",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Rochefort 8",
-    "style": "E - Stout",
-    "status": true
-  },
-  {
-    "alcohol": 11.3,
-    "description": "The top product from the Rochefort Trappist brewery. Dark colour, full and very impressive taste. Strong plum, raisin, and black currant palate, with ascending notes of vinousness and other complexities.",
-    "id": "TrappistesRochefort10",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "Rochefort 10",
+    "alcohol": 5.0,
+    "description": "Clear deep golden colour, moderate white head. Aroma of malts and toffee, hints of caramel and earthy hops. The flavour is first malty but not very sweet, followed by fruity and earthy hops.",
+    "id": "KirkstallDissolution",
+    "img": "/images/Kirkstall-Dissolution_IPA-CASK.webp",
+    "name": "Kirkstall Dissolution",
     "style": "A - Pale",
     "status": true
   },
   {
-    "alcohol": 6.7,
-    "description": "This name became a reference. This beer is mostly pointed out with its product name: a Paterke. This Paterke is a dark, chestnut coloured beer with a high fermentation (6.7%) and a full taste",
-    "id": "StBernardusPater6",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "St Bernardus Pater 6",
+    "alcohol": 6.0,
+    "description": "This contemporary IPA explodes with amazing hop harvest aromas, packs in big tropical and citrus hop flavours before a crisp, refreshing finish.",
+    "id": "OakhamGreenDevil",
+    "img": "/images/OAK19_GreenDevilIPA_Round_500px.png",
+    "name": "Oakham Green Devil",
     "style": "A - Pale",
     "status": true
   },
   {
-    "alcohol": 8.0,
-    "description": "This beer, with high fermentation, has a pale amber colour and a flowery, fruity taste with a harmonious balance between sweet and sour. This beer has a thick and vivid froth and strikes its balanced taste with a delicate bitterness.",
-    "id": "StBernardusTripel",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "St Bernardus Tripel",
+    "alcohol": 4.3,
+    "description": "A simple combination of pale malt and American Cascade hops result in a crisp, dry and refreshing pale ale with aromas of citrus fruit and balanced bitterness.",
+    "id": "OssettSilverKing",
+    "img": "/images/Ossett-Brewery-Silver-King.webp",
+    "name": "Ossett Silver King",
+    "style": "B - Amber",
+    "status": true
+  },
+  {
+    "alcohol": 4.3,
+    "description": "",
+    "id": "RoostersYankeePaleAle",
+    "img": "/images/beer-25692_e5f25_hd.jpeg",
+    "name": "Roosters Yankee Pale Ale",
     "style": "A - Pale",
     "status": true
   },
   {
-    "alcohol": 10.5,
-    "description": "The top product from the Rochefort Trappist brewery. Dark colour, full and very impressive taste. Strong plum, raisin, and black currant palate, with ascending notes of vinousness and other complexities.",
-    "id": "StBernardusAbt12",
-    "img": "/images/magpie-best-minikeg.jpg",
-    "name": "St Bernardus Abt 12",
+    "alcohol": 4.5,
+    "description": "A powerfully authentic, citrusy IPA. If a job's worth doing, make it a proper job. ",
+    "id": "StAustellProperJob",
+    "img": "/images/beer-5513_e2163_hd.jpeg",
+    "name": "St Austell Proper Job",
     "style": "A - Pale",
+    "status": true
+  },
+  {
+    "alcohol": 5.9,
+    "description": "Brewed with a huge amount of US hops that provide a fantastic experience of grapefruit, lemon and tropical fruit with an enticing bitterness. Balanced with a great English malt base of Low Colour Maris Otter from Norfolk that helps keep the beer light and drinkable with enough sweetness to keep it all in harmony.",
+    "id": "ThornbridgeJaipur",
+    "img": "/images/beer-7705_8f9af_hd.jpeg",
+    "name": "Thornbridge Jaipur",
+    "style": "A - Pale",
+    "status": true
+  },
+  {
+    "alcohol": 4.2,
+    "description": "English base malt and two big American hops giving orange and citrus flavours.",
+    "id": "FixedWheelChainReaction",
+    "img": "/images/Chain-Reaction-for-website.png",
+    "name": "Fixed Wheel Chain Reaction",
+    "style": "A - Pale",
+    "status": true
+  },
+  {
+    "alcohol": 3.9,
+    "description": "Subtle malt and floral notes are matched splendidly with citrus hop, rounded off with a slightly dry finish.",
+    "id": "DancingDuckAyUp",
+    "img": "/images/dancing-duck-ay-up.png",
+    "name": "Dancing Duck Ay Up",
+    "style": "A - Pale",
+    "status": true
+  },
+  {
+    "alcohol": 4.1,
+    "description": "A real mosaic of fruity and floral characteristics. Uses a base of light malts to really let those bold hop flavours and aromas shine.",
+    "id": "AdnamsMosaicPaleAle",
+    "img": "/images/beer-586773_36aa8_hd.jpeg",
+    "name": "Adnams Mosaic Pale Ale",
+    "style": "A - Pale",
+    "status": true
+  },
+  {
+    "alcohol": 4.2,
+    "description": "A classic traditional best bitter, glowing copper and full of malt character, balanced by some fantastic fruity British hops.",
+    "id": "MagpieBestBitter ",
+    "img": "/images/magpie-best-minikeg.jpg",
+    "name": "Magpie Best Bitter ",
+    "style": "Copper",
+    "status": true
+  },
+  {
+    "alcohol": 4.0,
+    "description": "Attractive mahogany, bringing forth flavours of honey and caramel with just a light bitterness in the finish to keep it balanced.",
+    "id": "ThornbridgeLordMarplesBitter",
+    "img": "/images/beer-12881_ec21c_hd.png",
+    "name": "Thornbridge Lord Marples Bitter",
+    "style": "Amber",
+    "status": true
+  },
+  {
+    "alcohol": 4.0,
+    "description": "A well balanced bitter. Uses wide range of malt to give this a rich depth and abundance of flavour. Offset this with a soft lingering bitterness.",
+    "id": "BlueMonkeyPrimate",
+    "img": "/images/Primate-May-21.png",
+    "name": "Blue Monkey Primate",
+    "style": "Amber",
+    "status": true
+  },
+  {
+    "alcohol": 4.9,
+    "description": "Strong dark porter that combes the sweetness of plums with the hoppy flavour of a porter.",
+    "id": "TitanicPlumPorter",
+    "img": "/images/plumporter.jfif",
+    "name": "Titanic Plum Porter",
+    "style": "Very Dark",
+    "status": true
+  },
+  {
+    "alcohol": 4.8,
+    "description": "The aroma has roast coffee, biscuit and slight hints of molasses. Theres a taste of chocolate, nut and coffee with a rounded sweetness and smooth, velvety malt mouthfeel. It finishes with a low level of bitterness to balance the sweet mocha malt profile.",
+    "id": "ExmoorOatmealStout",
+    "img": "/images/beer-5032543_e2cd6_hd.jpeg",
+    "name": "Exmoor Oatmeal Stout",
+    "style": "Very Dark",
+    "status": true
+  },
+  {
+    "alcohol": 4.4,
+    "description": "Nutty, deeply rich and satisfying ruby ale.",
+    "id": "RudgateRubyMild",
+    "img": "/images/beer-33032_1fb02_hd.jpeg",
+    "name": "Rudgate Ruby Mild",
+    "style": "Very Dark",
+    "status": true
+  },
+  {
+    "alcohol": 5.8,
+    "description": "Gasping Goose is a complex medium cider with a slightly tannic finish.",
+    "id": "NewtonCourtGaspingGoose",
+    "img": "/images/beer-1013491_2b753_hd.jpeg",
+    "name": "Newton Court Gasping Goose",
+    "style": "Cider",
+    "status": true
+  },
+  {
+    "alcohol": 6.4,
+    "description": "A hazy, dry, oak aged cider from Somerset.",
+    "id": "ThatchersStansTraditional",
+    "img": "/images/1601730-p.jpg",
+    "name": "Thatchers Stan's Traditional",
+    "style": "Cider",
+    "status": true
+  },
+  {
+    "alcohol": 4.2,
+    "description": "Lukas is straw blonde, full-bodied yet sparklingly light. This Helles exudes a subtle, freshly bakes bread maltiness, balanced with an elegant noble hop aroma.",
+    "id": "ThornbridgeLukas",
+    "img": "/images/beer-1439741_9a8f3_hd.jpeg",
+    "name": "Thornbridge Lukas",
+    "style": "Lager",
     "status": true
   }
 ]

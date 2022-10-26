@@ -9,12 +9,20 @@ import {
 
 const BeerCard = ({ img, name, description, style, alcohol, status }) => {
   return (
-    <Card sx={{ maxWidth: 345, pt: "30px" }}>
+    <Card
+      sx={{
+        display: "flex",
+        flexGrow: 1,
+        pt: "30px",
+        boxShadow:
+          " rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+      }}
+    >
       <CardMedia
         component='img'
-        height='100%'
-        image={"/images/magpie-best-minikeg.jpg"}
-        alt='Magpie Best'
+        sx={{ height: "175px" }}
+        image={img}
+        alt={name}
       />
       <CardContent>
         {status ? (
