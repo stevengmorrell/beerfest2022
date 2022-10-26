@@ -20,7 +20,7 @@ const BeerCard = ({ img, name, description, style, alcohol, status }) => {
           " rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
       }}
     >
-      <Box sx={{ width: "200px", position: "relative" }}>
+      <Box sx={{ width: "200px", height: "200px", position: "relative" }}>
         <Image src={img} alt={name} layout='fill' objectFit='contain' />
       </Box>
 
