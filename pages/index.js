@@ -6,7 +6,6 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import Image from "next/image";
 import React from "react";
 import BeerCard from "../components/BeerCard";
 import Heading from "../components/Heading";
@@ -17,7 +16,7 @@ export default function Home() {
     <React.Fragment>
       <CssBaseline />
       <Heading />
-      <Container>
+      <Container sx={{ backgroundColor: "#FFC40A" }}>
         <Box>
           <Card sx={{ marginBottom: "20px" }}>
             <Typography variant='h4'>WBHC Beer Festival 2022</Typography>

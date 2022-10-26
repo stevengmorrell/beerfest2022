@@ -6,6 +6,8 @@ import {
   Rating,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
+import { Box } from "@mui/system";
 
 const BeerCard = ({ img, name, description, style, alcohol, status }) => {
   return (
@@ -18,12 +20,16 @@ const BeerCard = ({ img, name, description, style, alcohol, status }) => {
           " rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
       }}
     >
-      <CardMedia
+      <Box sx={{ width: "200px", position: "relative" }}>
+        <Image src={img} alt={name} layout='fill' objectFit='contain' />
+      </Box>
+
+      {/* <CardMedia
         component='img'
         sx={{ height: "175px" }}
         image={img}
         alt={name}
-      />
+      /> */}
       <CardContent>
         {status ? (
           <Typography gutterBottom variant='h5' component='div'>
