@@ -1,51 +1,52 @@
 import {
   Box,
-  Button,
   Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  Checkbox,
   Container,
+  CssBaseline,
   Grid,
-  Rating,
   Typography,
 } from "@mui/material";
-import Head from "next/head";
 import Image from "next/image";
+import React from "react";
 import BeerCard from "../components/BeerCard";
 import Heading from "../components/Heading";
 import beerData from "../json/beerData.json";
 
 export default function Home() {
   return (
-    <Container>
+    <React.Fragment>
+      <CssBaseline />
       <Heading />
-      <Box>
-        <h1>WBHC Beer Festival 2022</h1>
-      </Box>
-      <Grid
-        container
-        spacing={3}
-        sx={{ background: "#F5B301", pt: "20px" }}
-        justifyContent='center'
-      >
-        {beerData.map((beer) => (
-          <Grid item key={beer.id}>
-            <BeerCard
-              item
-              xs={12}
-              img={beer.img}
-              name={beer.name}
-              description={beer.description}
-              style={beer.style}
-              alcohol={beer.alcohol}
-              status={beer.status}
-            />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+      <Container>
+        <Box>
+          <Card sx={{ marginBottom: "20px" }}>
+            <Typography variant='h4'>WBHC Beer Festival 2022</Typography>
+          </Card>
+
+          <Box>
+            <Grid
+              container
+              spacing={2}
+              // columnSpacing={{ xs: 0, sm: 1, md: 3 }}
+              // rowSpacing={{ xs: 1, sm: 2, md: 3 }}
+            >
+              {beerData.map((beer) => (
+                <Grid item key={beer.id}>
+                  <BeerCard
+                    item
+                    img={beer.img}
+                    name={beer.name}
+                    description={beer.description}
+                    style={beer.style}
+                    alcohol={beer.alcohol}
+                    status={beer.status}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+    </React.Fragment>
   );
 }
