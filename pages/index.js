@@ -30,10 +30,26 @@ export default function Home() {
         <title>West Bridgford Hockey Club Beer Festival 2022</title>
       </Head>
       <CssBaseline />
-      <Container sx={{ backgroundColor: "#FFC40A", paddingBottom: "30px" }}>
+      <Container
+        sx={{
+          backgroundColor: "#FFC40A",
+          paddingBottom: "30px",
+          paddingTop: "30px",
+        }}
+      >
         <Box>
-          <Card sx={{ marginBottom: "20px" }}>
-            <Box sx={{ width: "200px", height: "200px", position: "relative" }}>
+          <Box sx={{ backgroundColor: "white", display: "flex", mb: "20px" }}>
+            <Box
+              sx={{
+                width: "100px",
+                height: "100px",
+                position: "relative",
+                display: "flex",
+                flexDirection: "row",
+                marginBottom: "20px",
+                marginTop: "20px",
+              }}
+            >
               <Image
                 src={Logo}
                 alt={"WBHC Logo"}
@@ -42,14 +58,19 @@ export default function Home() {
               />
             </Box>
             <Typography variant='h4'>WBHC Beer Festival 2022</Typography>
-          </Card>
-          <Card>
+          </Box>
+
+          <Card sx={{ marginBottom: "20px" }}>
             <Typography>
-              Add date, location (link to maps), no entry fee{" "}
+              Add date, location (link to maps), no entry fee etc
             </Typography>
           </Card>
 
           <Box>
+            <Card>
+              <Typography>Beer List</Typography>
+            </Card>
+
             <Grid container spacing={2}>
               {beerData.map((beer) => (
                 <Grid item key={beer.id}>

@@ -32,12 +32,12 @@
     "id": "OssettSilverKing",
     "img": "/images/Ossett-Brewery-Silver-King.webp",
     "name": "Ossett Silver King",
-    "style": "B - Amber",
+    "style": "A - Pale",
     "status": true
   },
   {
     "alcohol": 4.3,
-    "description": "",
+    "description": "Light and easy-drinking, it’s a beer that showcases the floral and citrus fruit aromas of the Cascade hop, grown in the Yakima Valley in Washington State.",
     "id": "RoostersYankeePaleAle",
     "img": "/images/beer-25692_e5f25_hd.jpeg",
     "name": "Roosters Yankee Pale Ale",
@@ -104,7 +104,7 @@
     "id": "ThornbridgeLordMarplesBitter",
     "img": "/images/beer-12881_ec21c_hd.png",
     "name": "Thornbridge Lord Marples Bitter",
-    "style": "Amber",
+    "style": "Brown",
     "status": true
   },
   {
@@ -113,12 +113,12 @@
     "id": "BlueMonkeyPrimate",
     "img": "/images/Primate-May-21.png",
     "name": "Blue Monkey Primate",
-    "style": "Amber",
+    "style": "Brown",
     "status": true
   },
   {
     "alcohol": 4.9,
-    "description": "Strong dark porter that combes the sweetness of plums with the hoppy flavour of a porter.",
+    "description": "Strong dark porter that combines the sweetness of plums with the hoppy flavour of a porter.",
     "id": "TitanicPlumPorter",
     "img": "/images/plumporter.jfif",
     "name": "Titanic Plum Porter",
