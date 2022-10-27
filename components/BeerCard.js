@@ -12,7 +12,7 @@ import { Box } from "@mui/system";
 const BeerCard = ({ img, name, description, style, alcohol, status }) => {
   const TitleText = () =>
     status ? (
-      <Typography gutterBottom variant='h5' component='div'>
+      <Typography gutterBottom variant='h5'>
         {name}
       </Typography>
     ) : (

@@ -1,5 +1,7 @@
 import {
   Box,
+  Button,
+  ButtonGroup,
   Card,
   Container,
   CssBaseline,
@@ -11,7 +13,7 @@ import {
 import { createTheme } from "@mui/material/styles";
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import BeerCard from "../components/BeerCard";
 import Logo from "../public/images/WBHCLogo.jpg";
 
@@ -25,6 +27,9 @@ export default function Home() {
       ),
     },
   });
+
+  const [filters, setFilters] = useState([]);
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -42,7 +47,7 @@ export default function Home() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "row",
               backgroundColor: "#FFFFFF",
               p: "15px",
               borderRadius: "5px",
@@ -56,9 +61,6 @@ export default function Home() {
                 height: "100px",
                 position: "relative",
                 display: "flex",
-                flexDirection: "row",
-                marginBottom: "20px",
-                marginTop: "20px",
               }}
             >
               <Image
@@ -82,9 +84,12 @@ export default function Home() {
               mb: 2,
             }}
           >
+            <Typography>Date: 17-19th November 2022</Typography>
+            <Typography>16:30 - Late</Typography>
             <Typography>
-              Add date, location (link to maps), no entry fee etc
+              West Bridgford Hockey Club, Loughborough Road
             </Typography>
+            <Typography>No Entry Fee</Typography>
           </Box>
 
           <Box>
@@ -99,7 +104,23 @@ export default function Home() {
                 mb: 2,
               }}
             >
-              <Typography>Beer List</Typography>
+              <Typography variant='h4' sx={{ textAlign: "center" }}>
+                Beer List
+              </Typography>
+
+              <p>Filters:</p>
+
+              <ButtonGroup>
+                <Button variant='contained'>Pale</Button>
+                <Button variant='contained'>Amber</Button>
+                <Button variant='contained'>Copper</Button>
+                <Button variant='contained'>Brown</Button>
+                <Button variant='contained'>Very Dark</Button>
+              </ButtonGroup>
+              <ButtonGroup>
+                <Button variant='contained'>Cider</Button>
+                <Button variant='contained'>Lager</Button>
+              </ButtonGroup>
             </Box>
 
             <Stack container spacing={2}>
