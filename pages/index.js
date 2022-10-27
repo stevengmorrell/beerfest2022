@@ -4,6 +4,7 @@ import {
   Container,
   CssBaseline,
   Grid,
+  Stack,
   ThemeProvider,
   Typography,
 } from "@mui/material";
@@ -38,7 +39,17 @@ export default function Home() {
         }}
       >
         <Box>
-          <Box sx={{ backgroundColor: "white", display: "flex", mb: "20px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              backgroundColor: "#FFFFFF",
+              p: "15px",
+              borderRadius: "5px",
+              boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+              mb: 2,
+            }}
+          >
             <Box
               sx={{
                 width: "100px",
@@ -60,18 +71,38 @@ export default function Home() {
             <Typography variant='h4'>WBHC Beer Festival 2022</Typography>
           </Box>
 
-          <Card sx={{ marginBottom: "20px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              backgroundColor: "#FFFFFF",
+              p: 2,
+              borderRadius: "5px",
+              boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+              mb: 2,
+            }}
+          >
             <Typography>
               Add date, location (link to maps), no entry fee etc
             </Typography>
-          </Card>
+          </Box>
 
           <Box>
-            <Card>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                backgroundColor: "#FFFFFF",
+                p: 2,
+                borderRadius: "5px",
+                boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+                mb: 2,
+              }}
+            >
               <Typography>Beer List</Typography>
-            </Card>
+            </Box>
 
-            <Grid container spacing={2}>
+            <Stack container spacing={2}>
               {beerData.map((beer) => (
                 <Grid item key={beer.id}>
                   <BeerCard
@@ -85,7 +116,7 @@ export default function Home() {
                   />
                 </Grid>
               ))}
-            </Grid>
+            </Stack>
           </Box>
         </Box>
       </Container>
