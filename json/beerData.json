@@ -5,7 +5,7 @@
     "id": "HopbackSummerLightning",
     "img": "/images/summerlightning.png",
     "name": "Hopback Summer Lightning",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -14,7 +14,7 @@
     "id": "KirkstallDissolution",
     "img": "/images/Kirkstall-Dissolution_IPA-CASK.webp",
     "name": "Kirkstall Dissolution",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -23,7 +23,7 @@
     "id": "OakhamGreenDevil",
     "img": "/images/OAK19_GreenDevilIPA_Round_500px.png",
     "name": "Oakham Green Devil",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -32,16 +32,16 @@
     "id": "OssettSilverKing",
     "img": "/images/Ossett-Brewery-Silver-King.webp",
     "name": "Ossett Silver King",
-    "style": "B - Amber",
+    "style": "Pale",
     "status": true
   },
   {
     "alcohol": 4.3,
-    "description": "",
+    "description": "Light and easy-drinking, it’s a beer that showcases the floral and citrus fruit aromas of the Cascade hop, grown in the Yakima Valley in Washington State.",
     "id": "RoostersYankeePaleAle",
     "img": "/images/beer-25692_e5f25_hd.jpeg",
     "name": "Roosters Yankee Pale Ale",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -50,7 +50,7 @@
     "id": "StAustellProperJob",
     "img": "/images/beer-5513_e2163_hd.jpeg",
     "name": "St Austell Proper Job",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -59,7 +59,7 @@
     "id": "ThornbridgeJaipur",
     "img": "/images/beer-7705_8f9af_hd.jpeg",
     "name": "Thornbridge Jaipur",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -68,7 +68,7 @@
     "id": "FixedWheelChainReaction",
     "img": "/images/Chain-Reaction-for-website.png",
     "name": "Fixed Wheel Chain Reaction",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -77,7 +77,7 @@
     "id": "DancingDuckAyUp",
     "img": "/images/dancing-duck-ay-up.png",
     "name": "Dancing Duck Ay Up",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -86,7 +86,7 @@
     "id": "AdnamsMosaicPaleAle",
     "img": "/images/beer-586773_36aa8_hd.jpeg",
     "name": "Adnams Mosaic Pale Ale",
-    "style": "A - Pale",
+    "style": "Pale",
     "status": true
   },
   {
@@ -104,7 +104,7 @@
     "id": "ThornbridgeLordMarplesBitter",
     "img": "/images/beer-12881_ec21c_hd.png",
     "name": "Thornbridge Lord Marples Bitter",
-    "style": "Amber",
+    "style": "Brown",
     "status": true
   },
   {
@@ -113,12 +113,12 @@
     "id": "BlueMonkeyPrimate",
     "img": "/images/Primate-May-21.png",
     "name": "Blue Monkey Primate",
-    "style": "Amber",
+    "style": "Brown",
     "status": true
   },
   {
     "alcohol": 4.9,
-    "description": "Strong dark porter that combes the sweetness of plums with the hoppy flavour of a porter.",
+    "description": "Strong dark porter that combines the sweetness of plums with the hoppy flavour of a porter.",
     "id": "TitanicPlumPorter",
     "img": "/images/plumporter.jfif",
     "name": "Titanic Plum Porter",
