@@ -28,7 +28,24 @@ export default function Home() {
     },
   });
 
+  const filterTypes = [
+    "Pale",
+    "Copper",
+    "Brown",
+    "Very Dark",
+    "Cider",
+    "Lager",
+  ];
+
   const [filters, setFilters] = useState([]);
+
+  const filterClickHandler = (e) => {
+    filters.includes(e.target.value)
+      ? setFilters((filters) =>
+          filters.filter((item) => item !== e.target.value)
+        )
+      : setFilters((filters) => [...filters, e.target.value]);
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -104,39 +121,61 @@ export default function Home() {
                 mb: 2,
               }}
             >
-              <Typography variant='h4' sx={{ textAlign: "center" }}>
+              <Typography variant='h4' sx={{ textAlign: "center", pb: 2 }}>
                 Beer List
               </Typography>
-
-              <p>Filters:</p>
-
-              <ButtonGroup>
-                <Button variant='contained'>Pale</Button>
-                <Button variant='contained'>Amber</Button>
-                <Button variant='contained'>Copper</Button>
-                <Button variant='contained'>Brown</Button>
-                <Button variant='contained'>Very Dark</Button>
-              </ButtonGroup>
-              <ButtonGroup>
-                <Button variant='contained'>Cider</Button>
-                <Button variant='contained'>Lager</Button>
-              </ButtonGroup>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                }}
+              >
+                {filterTypes.map((beerType) => (
+                  <Button
+                    key={beerType}
+                    onClick={filterClickHandler}
+                    variant='contained'
+                    value={beerType}
+                    color='grey'
+                    sx={{ mr: 2, mb: 1 }}
+                  >
+                    {beerType}
+                  </Button>
+                ))}
+              </Box>
             </Box>
 
             <Stack container spacing={2}>
-              {beerData.map((beer) => (
-                <Grid item key={beer.id}>
-                  <BeerCard
-                    item
-                    img={beer.img}
-                    name={beer.name}
-                    description={beer.description}
-                    style={beer.style}
-                    alcohol={beer.alcohol}
-                    status={beer.status}
-                  />
-                </Grid>
-              ))}
+              {filters.length === 0
+                ? beerData.map((beer) => (
+                    <Grid item key={beer.id}>
+                      <BeerCard
+                        item
+                        img={beer.img}
+                        name={beer.name}
+                        description={beer.description}
+                        style={beer.style}
+                        alcohol={beer.alcohol}
+                        status={beer.status}
+                      />
+                    </Grid>
+                  ))
+                : beerData
+                    .filter((beer) => filters.includes(beer.style))
+
+                    .map((beer) => (
+                      <Grid item key={beer.id}>
+                        <BeerCard
+                          item
+                          img={beer.img}
+                          name={beer.name}
+                          description={beer.description}
+                          style={beer.style}
+                          alcohol={beer.alcohol}
+                          status={beer.status}
+                        />
+                      </Grid>
+                    ))}
             </Stack>
           </Box>
         </Box>
