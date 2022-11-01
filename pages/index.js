@@ -1,8 +1,7 @@
 import {
   Box,
   Button,
-  ButtonGroup,
-  Card,
+  Chip,
   Container,
   CssBaseline,
   Grid,
@@ -26,6 +25,20 @@ export default function Home() {
         ","
       ),
     },
+    palette: {
+      primary: {
+        light: "#fff350",
+        main: "#ffc107",
+        dark: "#c79100",
+        contrastText: "#000",
+      },
+      secondary: {
+        light: "#ffffff",
+        main: "#eeeeee",
+        dark: "#bcbcbc",
+        contrastText: "#000",
+      },
+    },
   });
 
   const filterTypes = [
@@ -39,12 +52,14 @@ export default function Home() {
 
   const [filters, setFilters] = useState([]);
 
-  const filterClickHandler = (e) => {
-    filters.includes(e.target.value)
-      ? setFilters((filters) =>
-          filters.filter((item) => item !== e.target.value)
-        )
-      : setFilters((filters) => [...filters, e.target.value]);
+  const filterClickHandler = (beerType) => {
+    filters.includes(beerType)
+      ? setFilters((filters) => filters.filter((item) => item !== beerType))
+      : setFilters((filters) => [...filters, beerType]);
+  };
+
+  const clearClickHandler = () => {
+    setFilters([]);
   };
 
   return (
@@ -78,6 +93,7 @@ export default function Home() {
                 height: "100px",
                 position: "relative",
                 display: "flex",
+                mr: 2,
               }}
             >
               <Image
@@ -87,28 +103,22 @@ export default function Home() {
                 objectFit='contain'
               />
             </Box>
-            <Typography variant='h4'>WBHC Beer Festival 2022</Typography>
+            <Box>
+              <Box>
+                <Typography variant='h4'>
+                  WBHC Beer Festival 2022 - Beer List
+                </Typography>
+              </Box>
+              <Box>
+                <Typography>17-19th November 2022</Typography>
+                <Typography>16:30 - Late</Typography>
+                <Typography>
+                  West Bridgford Hockey Club, Loughborough Road
+                </Typography>
+                <Typography>Free Entry</Typography>
+              </Box>
+            </Box>
           </Box>
-
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              backgroundColor: "#FFFFFF",
-              p: 2,
-              borderRadius: "5px",
-              boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
-              mb: 2,
-            }}
-          >
-            <Typography>Date: 17-19th November 2022</Typography>
-            <Typography>16:30 - Late</Typography>
-            <Typography>
-              West Bridgford Hockey Club, Loughborough Road
-            </Typography>
-            <Typography>No Entry Fee</Typography>
-          </Box>
-
           <Box>
             <Box
               sx={{
@@ -121,27 +131,57 @@ export default function Home() {
                 mb: 2,
               }}
             >
-              <Typography variant='h4' sx={{ textAlign: "center", pb: 2 }}>
-                Beer List
+              <Typography variant='h5' sx={{ textAlign: "center", pb: 2 }}>
+                Filter by type
               </Typography>
               <Box
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
+                  justifyContent: "center",
                 }}
               >
                 {filterTypes.map((beerType) => (
-                  <Button
+                  <Chip
                     key={beerType}
-                    onClick={filterClickHandler}
-                    variant='contained'
-                    value={beerType}
-                    color='grey'
-                    sx={{ mr: 2, mb: 1 }}
-                  >
-                    {beerType}
-                  </Button>
+                    onClick={() => filterClickHandler(beerType)}
+                    sx={{
+                      mr: 2,
+                      mb: 1,
+                      width: "90px",
+                    }}
+                    label={beerType}
+                    color={filters.includes(beerType) ? "primary" : "secondary"}
+                  ></Chip>
                 ))}
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  flexDirection: "row-reverse",
+                  mt: 1,
+                }}
+              >
+                <Button
+                  onClick={clearClickHandler}
+                  variant='contained'
+                  sx={{
+                    mr: 2,
+                    mb: 1,
+                    width: "130px",
+                    color: "#fff",
+                    backgroundColor: "#3B3F46",
+                    "&:active": {
+                      backgroundColor: "#2A2E34",
+                    },
+                    "&:hover": {
+                      backgroundColor: "#3B3F46",
+                    },
+                  }}
+                >
+                  Clear Filters
+                </Button>
               </Box>
             </Box>
 
