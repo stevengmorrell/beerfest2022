@@ -15,6 +15,10 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import BeerCard from "../components/BeerCard";
 import Logo from "../public/images/WBHCLogo.jpg";
+import RoomIcon from "@mui/icons-material/Room";
+import CurrencyPoundIcon from "@mui/icons-material/CurrencyPound";
+import ScheduleIcon from "@mui/icons-material/Schedule";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 
 import beerData from "../json/beerData.json";
 
@@ -84,7 +88,7 @@ export default function Home() {
       <CssBaseline />
       <Container
         sx={{
-          backgroundColor: "#FFC40A",
+          backgroundColor: "#ffc107",
           paddingBottom: "30px",
           paddingTop: "30px",
         }}
@@ -119,17 +123,31 @@ export default function Home() {
             </Box>
             <Box>
               <Box>
-                <Typography variant='h4'>
-                  WBHC Beer Festival 2022 - Beer List
+                <Typography variant='h4' mb={1}>
+                  WBHC Beer Festival 2022
                 </Typography>
               </Box>
               <Box>
-                <Typography>17-19th November 2022</Typography>
-                <Typography>16:30 - Late</Typography>
-                <Typography>
-                  West Bridgford Hockey Club, Loughborough Road
-                </Typography>
-                <Typography>Free Entry</Typography>
+                <Box sx={{ display: "flex" }}>
+                  <CalendarTodayIcon sx={{ mr: 1 }} />
+                  <Typography gutterBottom>17-19th November</Typography>
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <ScheduleIcon sx={{ mr: 1 }} />
+                  <Typography gutterBottom>16:30 - Late</Typography>
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <RoomIcon sx={{ mr: 1 }} />
+                  <Typography gutterBottom>
+                    West Bridgford Hockey Club, 276 Loughborough Road,
+                    NG2&nbsp;7FA (
+                    <a href='https://goo.gl/maps/AZkTnjfnC8bBKL8s7'>Map</a>)
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <CurrencyPoundIcon sx={{ mr: 1 }} />
+                  <Typography gutterBottom>Free Entry</Typography>
+                </Box>
               </Box>
             </Box>
           </Box>
