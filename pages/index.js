@@ -12,7 +12,7 @@ import {
 import { createTheme } from "@mui/material/styles";
 import Head from "next/head";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BeerCard from "../components/BeerCard";
 import Logo from "../public/images/WBHCLogo.jpg";
 
@@ -51,6 +51,20 @@ export default function Home() {
   ];
 
   const [filters, setFilters] = useState([]);
+
+  const [ratings, setRatings] = useState(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("ratings");
+      const initialValue = JSON.parse(saved);
+      return initialValue || {};
+    } else {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ratings", JSON.stringify(ratings));
+  }, [ratings]);
 
   const filterClickHandler = (beerType) => {
     filters.includes(beerType)
@@ -197,12 +211,14 @@ export default function Home() {
                         style={beer.style}
                         alcohol={beer.alcohol}
                         status={beer.status}
+                        id={beer.id}
+                        ratings={ratings}
+                        setRatings={setRatings}
                       />
                     </Grid>
                   ))
                 : beerData
                     .filter((beer) => filters.includes(beer.style))
-
                     .map((beer) => (
                       <Grid item key={beer.id}>
                         <BeerCard
@@ -213,6 +229,9 @@ export default function Home() {
                           style={beer.style}
                           alcohol={beer.alcohol}
                           status={beer.status}
+                          id={beer.id}
+                          ratings={ratings}
+                          setRatings={setRatings}
                         />
                       </Grid>
                     ))}

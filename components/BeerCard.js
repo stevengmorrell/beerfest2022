@@ -1,15 +1,29 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Rating, Typography } from "@mui/material";
 import Image from "next/image";
 import { Box } from "@mui/system";
+import dynamic from "next/dynamic";
 
-const BeerCard = ({ img, name, description, style, alcohol, status }) => {
+const BeerCard = ({
+  img,
+  name,
+  description,
+  style,
+  alcohol,
+  status,
+  id,
+  ratings,
+  setRatings,
+}) => {
+  const updateRatings = (newValue) => {
+    const newEntry = { [id]: newValue };
+    setRatings(() => ({ ...ratings, ...newEntry }));
+  };
+
+  const BeerRating = dynamic(() => import("./BeerRating"), {
+    ssr: false,
+  });
+
   const TitleText = () =>
     status ? (
       <Typography gutterBottom variant='h5'>
@@ -51,24 +65,21 @@ const BeerCard = ({ img, name, description, style, alcohol, status }) => {
             <TitleText />
           </Box>
           <Box>
-            <Typography variant='body2' color='text.secondary'>
+            <Typography variant='body1' color='text.secondary'>
               {alcohol}%
             </Typography>
-            <Typography variant='body2' color='text.secondary'>
+            <Typography variant='body1' color='text.secondary'>
               {style}
             </Typography>
           </Box>
         </Box>
       </Box>
-
       <Box sx={{ mb: "5px", pl: 3 }}>
         <Typography variant='body' color='text.secondary'>
           {description}
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row-reverse" }}>
-        <Rating name='size-large' size='large' />
-      </Box>
+      <BeerRating id={id} ratings={ratings} updateRatings={updateRatings} />
     </Box>
   );
 };
