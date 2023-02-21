@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name='description' content='Beer Guide 2022' />
+        <meta name='description' content='Beer Guide 2023' />
         <link
           rel='apple-touch-icon'
           sizes='180x180'

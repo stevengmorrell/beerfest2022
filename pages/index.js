@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>West Bridgford Hockey Club Beer Festival 2022</title>
+        <title>West Bridgford Hockey Club Beer Festival 2023</title>
       </Head>
       <CssBaseline />
       <Container
@@ -124,13 +124,13 @@ export default function Home() {
             <Box>
               <Box>
                 <Typography variant='h4' mb={1}>
-                  WBHC Beer Festival 2022
+                  WBHC Beer Festival 2023
                 </Typography>
               </Box>
               <Box>
                 <Box sx={{ display: "flex" }}>
                   <CalendarTodayIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>17-19th November</Typography>
+                  <Typography gutterBottom>23-25th March</Typography>
                 </Box>
                 <Box sx={{ display: "flex" }}>
                   <ScheduleIcon sx={{ mr: 1 }} />
