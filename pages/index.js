@@ -117,17 +117,20 @@ export default function Home() {
               <Image
                 src={Logo}
                 alt={"WBHC Logo"}
-                layout='fill'
-                objectFit='contain'
+                layout="fill"
+                objectFit="contain"
               />
             </Box>
             <Box>
               <Box>
-                <Typography variant='h4' mb={1}>
+                <Typography variant="h4" mb={1}>
                   WBHC Beer Festival 2023
                 </Typography>
               </Box>
               <Box>
+                  <Typography gutterBottom>
+                    All beers subject to change until delivery
+                  </Typography>               
                 <Box sx={{ display: "flex" }}>
                   <CalendarTodayIcon sx={{ mr: 1 }} />
                   <Typography gutterBottom>23-25th March</Typography>
@@ -141,7 +144,7 @@ export default function Home() {
                   <Typography gutterBottom>
                     West Bridgford Hockey Club, 276 Loughborough Road,
                     NG2&nbsp;7FA (
-                    <a href='https://goo.gl/maps/AZkTnjfnC8bBKL8s7'>Map</a>)
+                    <a href="https://goo.gl/maps/AZkTnjfnC8bBKL8s7">Map</a>)
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex" }}>
@@ -163,7 +166,7 @@ export default function Home() {
                 mb: 2,
               }}
             >
-              <Typography variant='h5' sx={{ textAlign: "center", pb: 2 }}>
+              <Typography variant="h5" sx={{ textAlign: "center", pb: 2 }}>
                 Filter by type
               </Typography>
               <Box
@@ -197,7 +200,7 @@ export default function Home() {
               >
                 <Button
                   onClick={clearClickHandler}
-                  variant='contained'
+                  variant="contained"
                   sx={{
                     mr: 2,
                     mb: 1,
