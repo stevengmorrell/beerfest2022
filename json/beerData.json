@@ -18,7 +18,7 @@
 },
 {
   "alcohol": 4.4,
-  "description": "A classic bitter, landlords favourite. ",
+  "description": "A new classic bitter, landlords favourite.",
   "id": "TillTheBitterEnd",
   "img": "/images/blackiris.jpeg",
   "name": "Black Iris Till the Bitter End",
@@ -36,11 +36,11 @@
 },
 
 {
-  "alcohol": 7.2,
-  "description": "Bob’s award-winning Stout. Give a third a try, it’s epic!",
+  "alcohol": 7.3,
+  "description": "Bob’s award-winning stout, recently taking the Spyke Golding Challenge Shield. A strong, dark stout, with rich chocolate and malt flavours. Subtle vanilla for a slightly sweet kick. Made with chocolate malt and roast barley. Give a third a try, it’s epic!",
   "id": "MagpieImperialStout",
   "img": "/images/magpie.jpeg",
-  "name": "Magpie Imperial Stout",
+  "name": "Magpie All Vanilla, No Filler",
   "style": "Very Dark",
   "status": true
 },
@@ -131,15 +131,6 @@
     "id": "BroadoakKingstonBlack",
     "img": "/images/Broadoak.jpeg",
     "name": "Broadoak Kingston Black",
-    "style": "Cider",
-    "status": true
-  },
-  {
-    "alcohol": 4.0,
-    "description": "A hazy, dry, oak aged cider from Somerset.",
-    "id": "CelticMarchesWildBerries",
-    "img": "/images/wildberries.jpeg",
-    "name": "Celtic Marches Wild Berries",
     "style": "Cider",
     "status": true
   },
