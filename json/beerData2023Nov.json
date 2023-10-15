@@ -1,0 +1,193 @@
+[
+  {
+    "alcohol": 5.0,
+    "description": "A deep rich and satisfying premium stout with complex balanced flavours and a warm subtle chocolate finish.",
+    "id": "RudgateYorkChocolateStout",
+    "img": "/images/rudgatechocstout.jpeg",
+    "name": "Rudgate - York Chocolate Stout",
+    "style": "Dark",
+    "status": true
+  },
+  {
+    "alcohol": 4.9,
+    "description": "Strong dark porter that combines the sweetness of plums with the hoppy flavour of a porter.",
+    "id": "TitanicPlumPorter",
+    "img": "/images/plumporter.jfif",
+    "name": "Titanic - Plum Porter",
+    "style": "Dark",
+    "status": true
+  },
+  {
+    "alcohol": 4.3,
+    "description": "BlackIrisBreweryNeonRaptorMoshassurus",
+    "id": "MoshassurusMild",
+    "img": "/images/neonraptor.jpeg",
+    "name": "Black Iris Brewery x Neon Raptor - Moshassurus",
+    "style": "Ruby Mild",
+    "status": true
+  },
+  {
+    "alcohol": 4.0,
+    "description": "An attractive mahogany, bringing forth flavours of honey and caramel with just a light bitterness in the finish to keep it balanced.",
+    "id": "ThornbridgeLordMarples",
+    "img": "/images/lordmarples.png",
+    "name": "Thornbridge - Lord Marples",
+    "style": "Brown",
+    "status": true
+  },
+  {
+    "alcohol": 4.5,
+    "description": "Rich and well balanced with a mellow malty flavour that gives way to a clean, refreshing finish",
+    "id": "BrainsTheRevJames",
+    "img": "/images/revjames.jpeg",
+    "name": "Brains - The Rev. James",
+    "style": "Brown",
+    "status": true
+  },
+  {
+    "alcohol": 5.3,
+    "description": "Fruity, premium strength golden ale showcasing hops from around the world.",
+    "id": "AbbeydaleAbsolution",
+    "img": "/images/absolution.jpeg",
+    "name": "Abbeydale - Absolution",
+    "style": "Amber",
+    "status": true
+  },
+  {
+    "alcohol": 4.3,
+    "description": "The drinkers' favourite, a classic ale with a complex citrus and hoppy aroma.",
+    "id": "TimothyTaylorLandlord",
+    "img": "/images/landlord.jpeg",
+    "name": "Timothy Taylor - Landlord",
+    "style": "Amber",
+    "status": true
+  },
+  {
+    "alcohol": 6.0,
+    "description": "This contemporary IPA explodes with amazing hop harvest aromas, packs in big tropical and citrus hop flavours before a crisp, refreshing finish.",
+    "id": "OakhamGreenDevil",
+    "img": "/images/OAK19_GreenDevilIPA_Round_500px.png",
+    "name": "Oakham - Green Devil",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 5.5,
+    "description": "Dry hopped with El Dorado and Ekuanot with Cascade hops thrown in at the bittering stage. Expect big tropical fruit flavours in this classic USA hopped IPA.",
+    "id": "BlackIrisLettheDevilIn",
+    "img": "/images/letthedevilin.jpeg",
+    "name": "Black Iris - Let The Devil In",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 5.2,
+    "description": "Cool, calm and collected - Citra and Chinook. Citrus, grapefruit and pine notes in this one.",
+    "id": "ShinyAmbientSouls",
+    "img": "/images/ambientsouls.jpeg",
+    "name": "Shiny - Ambient Souls",
+    "style": "Hazy",
+    "status": true
+  },
+  {
+    "alcohol": 5.2,
+    "description": "A classic pale ale, brewed from British pale malt and US Cascade hops.",
+    "id": "OssettExcelsius",
+    "img": "/images/excelsius.jpeg",
+    "name": "Ossett - Excelsius",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 5.0,
+    "description": "An extremely pleasant bitter, straw coloured beer with a terrific fresh, hoppy aroma.",
+    "id": "HopbackSummerLightning",
+    "img": "/images/summerlightning.jpeg",
+    "name": "Hopback - Summer Lightning",
+    "style": "Pale",
+    "status": true
+  },
+
+  {
+    "alcohol": 4.5,
+    "description": "Our hop morphing Session IPA last brewed in early 2021 now hopped with a hop combination of Sabro, Citra, Simcoe, Mosaic.",
+    "id": "BrewYorkXPanda",
+    "img": "/images/xpanda.jpeg",
+    "name": "Brew York – X Panda",
+    "style": "Pale",
+    "status": true
+  },
+
+  {
+    "alcohol": 4.5,
+    "description": "Part of the Wanderlust series. A New World Pale Ale, based on hops from New Zealand and the USA. Tropical citrus aroma, slightly sweet on the palate.",
+    "id": "MagpieRoam",
+    "img": "/images/roam.png",
+    "name": "Magpie - Roam",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 4.3,
+    "description": "A juicy Pale Ale packed full of Amarillo at flameout. Double dry-hopped with yet more Amarillo and Motueka for a huge fruity citrusy aroma and lush notes of orange and mandarin on the palate.",
+    "id": "LiquidLightDayTripper",
+    "img": "/images/daytripper.jpeg",
+    "name": "Liquid Light - Day Tripper",
+    "style": "Hazy",
+    "status": true
+  },
+  {
+    "alcohol": 4.0,
+    "description": "Enticing tropical fruit aromas and a lovely thirst quenching bitterness.",
+    "id": "BlueMonkeyBGSips",
+    "img": "/images/bgsips.jpeg",
+    "name": "Blue Monkey - BG Sips",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 3.9,
+    "description": "An eminently drinkable pale session ale. Subtle malt and floral notes are matched splendidly with citrus hop, rounded off with a slightly dry finish",
+    "id": "AyUpDancingDuck",
+    "img": "/images/ayup.jpeg",
+    "name": "Ay Up - Dancing Duck",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 3.8,
+    "description": "Rollin’ Home is our house session pale ale brewed with maximum flavor. The added late hop additions of Ahtanum & Citra really benefits soft citrus. , peppery tones with a spice finish. At 3.8% , don’t walk to the bar for another. Run to the bar.",
+    "id": "RedDogRollinHome",
+    "img": "/images/rollinhome.jpeg",
+    "name": "Red Dog Ales - Rollin' Home",
+    "style": "Pale",
+    "status": true
+  },
+  {
+    "alcohol": 4.2,
+    "description": "A cloudy cider that provides a crisp apple flavour with a refreshing fruit finish.",
+    "id": "westonsRosiesPig",
+    "img": "/images/rosiespig.jpeg",
+    "name": "Westons Cider - Rosie's Pig",
+    "style": "Cider",
+    "status": true
+  },
+  {
+    "alcohol": 4.0,
+    "description": "Ruby Tuesday has a gorgeous rich red raspberry blush and is bursting with the wonderful taste of this beautiful berry.",
+    "id": "CelticMarchesRubyTuesday",
+    "img": "/images/rubytuesday.jpeg",
+    "name": "Celtic Marches - Ruby Tuesday",
+    "style": "Cider",
+    "status": true
+  },
+  {
+    "alcohol": 4.2,
+    "description": "Lukas is straw blonde, full-bodied yet sparklingly light. This Helles exudes a subtle, freshly bakes bread maltiness, balanced with an elegant noble hop aroma.",
+    "id": "ThornbridgeLukas",
+    "img": "/images/beer-1439741_9a8f3_hd.jpeg",
+    "name": "Thornbridge - Lukas",
+    "style": "Lager",
+    "status": true
+  }
+]

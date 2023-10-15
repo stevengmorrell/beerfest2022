@@ -14,13 +14,13 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import BeerCard from "../components/BeerCard";
-import Logo from "../public/images/WBHCLogo.jpg";
+import Logo from "../public/images/wbhclogotemp.png";
 import RoomIcon from "@mui/icons-material/Room";
 import CurrencyPoundIcon from "@mui/icons-material/CurrencyPound";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 
-import beerData from "../json/beerData.json";
+import beerData from "../json/beerData2023Nov.json";
 
 export default function Home() {
   const theme = createTheme({
@@ -47,9 +47,10 @@ export default function Home() {
 
   const filterTypes = [
     "Pale",
-    "Copper",
+    "Amber",
+    "Ruby Mild",
     "Brown",
-    "Very Dark",
+    "Dark",
     "Cider",
     "Lager",
   ];
@@ -83,7 +84,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>West Bridgford Hockey Club Beer Festival 2023</title>
+        <title>West Bridgford Hockey Club Beer Festival November 2023</title>
       </Head>
       <CssBaseline />
       <Container
@@ -124,16 +125,16 @@ export default function Home() {
             <Box>
               <Box>
                 <Typography variant="h4" mb={1}>
-                  WBHC Beer Festival 2023
+                  WBHC Beer Festival November 2023
                 </Typography>
               </Box>
               <Box>
-                  <Typography gutterBottom>
-                    All beers subject to change until delivery
-                  </Typography>               
+                <Typography gutterBottom>
+                  All beers subject to change until delivery
+                </Typography>
                 <Box sx={{ display: "flex" }}>
                   <CalendarTodayIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>23-25th March</Typography>
+                  <Typography gutterBottom>16th - 18th November</Typography>
                 </Box>
                 <Box sx={{ display: "flex" }}>
                   <ScheduleIcon sx={{ mr: 1 }} />
