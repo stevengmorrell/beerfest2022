@@ -98,7 +98,8 @@ export default function Home() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
               backgroundColor: "#FFFFFF",
               p: "15px",
               borderRadius: "5px",
@@ -107,50 +108,108 @@ export default function Home() {
             }}
           >
             <Box
+              mb={2}
               sx={{
-                width: "100px",
-                height: "100px",
+                display: "flex",
+                justifyContent: "center",
+                flexBasis: "100%",
+              }}
+            >
+              <Image src={Logo} alt={"WBHC Logo"} height={100} width={120} />
+            </Box>
+
+            {/* <Box
+              sx={{
+                // minWidth: "100px",
+                // minHeight: "100px",
                 position: "relative",
                 display: "flex",
                 mr: 2,
               }}
-            >
-              <Image
-                src={Logo}
-                alt={"WBHC Logo"}
-                layout="fill"
-                objectFit="contain"
-              />
-            </Box>
-            <Box>
-              <Box>
-                <Typography variant="h4" mb={1}>
-                  WBHC Beer Festival November 2023
-                </Typography>
-              </Box>
-              <Box>
-                <Typography gutterBottom>
-                  All beers subject to change until delivery
-                </Typography>
-                <Box sx={{ display: "flex" }}>
-                  <CalendarTodayIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>16th - 18th November</Typography>
-                </Box>
-                <Box sx={{ display: "flex" }}>
-                  <ScheduleIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>16:30 - Late</Typography>
-                </Box>
-                <Box sx={{ display: "flex" }}>
-                  <RoomIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>
-                    West Bridgford Hockey Club, 276 Loughborough Road,
-                    NG2&nbsp;7FA (
-                    <a href="https://goo.gl/maps/AZkTnjfnC8bBKL8s7">Map</a>)
+            ></Box> */}
+            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+              <Typography
+                textAlign="center"
+                sx={{ flexBasis: "100%" }}
+                variant="h4"
+                mb={1}
+                fontWeight={"bold"}
+              >
+                WBHC Beer Festival November 2023
+              </Typography>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  flexBasis: "100%",
+                }}
+                p={2}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    flexBasis: "100%",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexBasis: "100%",
+                      justifyContent: "center",
+                    }}
+                    mb={1}
+                  >
+                    <CalendarTodayIcon sx={{ mr: 1 }} />
+                    <Typography gutterBottom>16th - 18th November</Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexBasis: "100%",
+                      justifyContent: "center",
+                    }}
+                    mb={1}
+                  >
+                    <ScheduleIcon sx={{ mr: 1 }} />
+                    <Typography gutterBottom>17:00 - 23:00</Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexBasis: "100%",
+                      justifyContent: "center",
+                    }}
+                    mb={1}
+                  >
+                    <RoomIcon sx={{ mr: 1 }} />
+                    <Typography textAlign={"center"} gutterBottom>
+                      West Bridgford Hockey Club, 276 Loughborough Road,
+                      NG2&nbsp;7FA (
+                      <a href="https://goo.gl/maps/AZkTnjfnC8bBKL8s7">Map</a>)
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexBasis: "100%",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <CurrencyPoundIcon sx={{ mr: 1 }} />
+                    <Typography gutterBottom>Free Entry</Typography>
+                  </Box>
+                  <Typography
+                    textAlign="center"
+                    gutterBottom
+                    sx={{ flexBasis: "100%" }}
+                    fontStyle={"italic"}
+                    mt={2}
+                  >
+                    All beers subject to change until delivery
                   </Typography>
-                </Box>
-                <Box sx={{ display: "flex" }}>
-                  <CurrencyPoundIcon sx={{ mr: 1 }} />
-                  <Typography gutterBottom>Free Entry</Typography>
                 </Box>
               </Box>
             </Box>

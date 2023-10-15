@@ -19,7 +19,7 @@
   },
   {
     "alcohol": 4.3,
-    "description": "BlackIrisBreweryNeonRaptorMoshassurus",
+    "description": "A very special collaboration between Black Iris and Neon Raptor provides you this fantastic ruby mild.",
     "id": "MoshassurusMild",
     "img": "/images/neonraptor.jpeg",
     "name": "Black Iris Brewery x Neon Raptor - Moshassurus",
@@ -110,7 +110,7 @@
 
   {
     "alcohol": 4.5,
-    "description": "Our hop morphing Session IPA last brewed in early 2021 now hopped with a hop combination of Sabro, Citra, Simcoe, Mosaic.",
+    "description": "A hop morphing Session IPA last brewed in early 2021 now hopped with a hop combination of Sabro, Citra, Simcoe, Mosaic.",
     "id": "BrewYorkXPanda",
     "img": "/images/xpanda.jpeg",
     "name": "Brew York – X Panda",

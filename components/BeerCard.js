@@ -26,14 +26,14 @@ const BeerCard = ({
 
   const TitleText = () =>
     status ? (
-      <Typography gutterBottom variant='h5'>
+      <Typography gutterBottom variant="h5">
         {name}
       </Typography>
     ) : (
       <Typography
         gutterBottom
-        variant='h5'
-        component='div'
+        variant="h5"
+        component="div"
         sx={{ "text-decoration": "line-through" }}
       >
         {name}
@@ -45,7 +45,7 @@ const BeerCard = ({
         display: "flex",
         flexDirection: "column",
         backgroundColor: "#FFFFFF",
-        p: 2,
+        p: 4,
         borderRadius: "5px",
         boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
       }}
@@ -58,24 +58,24 @@ const BeerCard = ({
             mr: "15px",
           }}
         >
-          <Image src={img} alt={name} layout='fill' objectFit='contain' />
+          <Image src={img} alt={name} layout="fill" objectFit="contain" />
         </Box>
         <Box>
           <Box>
             <TitleText />
           </Box>
           <Box>
-            <Typography variant='body1' color='text.secondary'>
+            <Typography variant="body1" color="text.secondary">
               {alcohol}%
             </Typography>
-            <Typography variant='body1' color='text.secondary'>
+            <Typography variant="body1" color="text.secondary">
               {style}
             </Typography>
           </Box>
         </Box>
       </Box>
-      <Box sx={{ mb: "5px", pl: 3 }}>
-        <Typography variant='body' color='text.secondary'>
+      <Box sx={{ mb: "5px" }}>
+        <Typography variant="body" color="text.secondary">
           {description}
         </Typography>
       </Box>
