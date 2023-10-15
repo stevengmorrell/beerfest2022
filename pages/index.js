@@ -145,20 +145,19 @@ export default function Home() {
                   flexBasis: "100%",
                 }}
                 p={2}
+                ml={4}
               >
                 <Box
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
                     flexBasis: "100%",
-                    justifyContent: "center",
                   }}
                 >
                   <Box
                     sx={{
                       display: "flex",
                       flexBasis: "100%",
-                      justifyContent: "center",
                     }}
                     mb={1}
                   >
@@ -169,7 +168,6 @@ export default function Home() {
                     sx={{
                       display: "flex",
                       flexBasis: "100%",
-                      justifyContent: "center",
                     }}
                     mb={1}
                   >
@@ -180,12 +178,11 @@ export default function Home() {
                     sx={{
                       display: "flex",
                       flexBasis: "100%",
-                      justifyContent: "center",
                     }}
                     mb={1}
                   >
                     <RoomIcon sx={{ mr: 1 }} />
-                    <Typography textAlign={"center"} gutterBottom>
+                    <Typography gutterBottom>
                       West Bridgford Hockey Club, 276 Loughborough Road,
                       NG2&nbsp;7FA (
                       <a href="https://goo.gl/maps/AZkTnjfnC8bBKL8s7">Map</a>)
@@ -195,7 +192,6 @@ export default function Home() {
                     sx={{
                       display: "flex",
                       flexBasis: "100%",
-                      justifyContent: "center",
                     }}
                   >
                     <CurrencyPoundIcon sx={{ mr: 1 }} />
