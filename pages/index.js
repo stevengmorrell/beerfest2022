@@ -108,19 +108,14 @@ export default function Home() {
             }}
           >
             <Box
+              mb={2}
               sx={{
                 display: "flex",
                 justifyContent: "center",
                 flexBasis: "100%",
               }}
             >
-              <Image
-                src={Logo}
-                alt={"WBHC Logo"}
-                height={100}
-                width={100}
-                sx={{}}
-              />
+              <Image src={Logo} alt={"WBHC Logo"} height={100} width={120} />
             </Box>
 
             {/* <Box
