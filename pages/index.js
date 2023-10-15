@@ -179,7 +179,7 @@ export default function Home() {
                     mb={1}
                   >
                     <ScheduleIcon sx={{ mr: 1 }} />
-                    <Typography gutterBottom>16:30 - Late</Typography>
+                    <Typography gutterBottom>17:00 - 23:00</Typography>
                   </Box>
                   <Box
                     sx={{
