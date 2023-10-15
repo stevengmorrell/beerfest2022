@@ -1,49 +1,50 @@
-[  {
-  "alcohol": 4.1,
-  "description": "Eight different malts were used to create this balance Mild. Hints of caramel and chocolate are layered in the modern interpretation of a classic British style. A rich dark colour with a dry finish.",
-  "id": "MarbleMild",
-  "img": "/images/marblemild.jpeg",
-  "name": "Marble Mild",
-  "style": "Brown",
-  "status": true
-},
-{
-  "alcohol": 3.8,
-  "description": "A quaffable British session bitter balancing the unique qualities of different British hop varieties.",
-  "id": "MoorNano",
-  "img": "/images/moornano.jpeg",
-  "name": "Moor Nano",
-  "style": "Brown",
-  "status": true
-},
-{
-  "alcohol": 4.4,
-  "description": "A new classic bitter, landlords favourite.",
-  "id": "TillTheBitterEnd",
-  "img": "/images/blackiris.jpeg",
-  "name": "Black Iris Till the Bitter End",
-  "style": "Copper",
-  "status": true
-},
-{
-  "alcohol": 4.9,
-  "description": "Strong dark porter that combines the sweetness of plums with the hoppy flavour of a porter.",
-  "id": "TitanicPlumPorter",
-  "img": "/images/plumporter.jfif",
-  "name": "Titanic Plum Porter",
-  "style": "Very Dark",
-  "status": true
-},
+[
+  {
+    "alcohol": 4.1,
+    "description": "Eight different malts were used to create this balance Mild. Hints of caramel and chocolate are layered in the modern interpretation of a classic British style. A rich dark colour with a dry finish.",
+    "id": "MarbleMild",
+    "img": "/images/marblemild.jpeg",
+    "name": "Marble Mild",
+    "style": "Brown",
+    "status": true
+  },
+  {
+    "alcohol": 3.8,
+    "description": "A quaffable British session bitter balancing the unique qualities of different British hop varieties.",
+    "id": "MoorNano",
+    "img": "/images/moornano.jpeg",
+    "name": "Moor Nano",
+    "style": "Brown",
+    "status": true
+  },
+  {
+    "alcohol": 4.4,
+    "description": "A new classic bitter, landlords favourite.",
+    "id": "TillTheBitterEnd",
+    "img": "/images/blackiris.jpeg",
+    "name": "Black Iris Till the Bitter End",
+    "style": "Copper",
+    "status": true
+  },
+  {
+    "alcohol": 4.9,
+    "description": "Strong dark porter that combines the sweetness of plums with the hoppy flavour of a porter.",
+    "id": "TitanicPlumPorter",
+    "img": "/images/plumporter.jfif",
+    "name": "Titanic Plum Porter",
+    "style": "Very Dark",
+    "status": true
+  },
 
-{
-  "alcohol": 7.3,
-  "description": "Bob’s recent award winner, taking the 2023 Spyke Golding Challenge Shield and Champion Beer of Nottinghamshire at the Hucknall Beer Festival. A strong, dark stout, with rich chocolate and malt flavours. Subtle vanilla for a slightly sweet kick. Made with chocolate malt and roast barley. Give a third a try, it’s epic!",
-  "id": "MagpieImperialStout",
-  "img": "/images/magpie.jpeg",
-  "name": "Magpie All Vanilla, No Filler",
-  "style": "Very Dark",
-  "status": true
-},
+  {
+    "alcohol": 7.3,
+    "description": "Bob’s recent award winner, taking the 2023 Spyke Golding Challenge Shield and Champion Beer of Nottinghamshire at the Hucknall Beer Festival. A strong, dark stout, with rich chocolate and malt flavours. Subtle vanilla for a slightly sweet kick. Made with chocolate malt and roast barley. Give a third a try, it’s epic!",
+    "id": "MagpieImperialStout",
+    "img": "/images/magpie.jpeg",
+    "name": "Magpie All Vanilla, No Filler",
+    "style": "Very Dark",
+    "status": true
+  },
   {
     "alcohol": 6.0,
     "description": "This contemporary IPA explodes with amazing hop harvest aromas, packs in big tropical and citrus hop flavours before a crisp, refreshing finish.",
