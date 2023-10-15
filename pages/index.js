@@ -14,7 +14,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import BeerCard from "../components/BeerCard";
-import Logo from "../public/images/WBHCLogo.jpg";
+import Logo from "../public/images/wbhclogotemp.png";
 import RoomIcon from "@mui/icons-material/Room";
 import CurrencyPoundIcon from "@mui/icons-material/CurrencyPound";
 import ScheduleIcon from "@mui/icons-material/Schedule";
