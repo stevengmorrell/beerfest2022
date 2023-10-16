@@ -119,11 +119,11 @@
   },
 
   {
-    "alcohol": 4.5,
-    "description": "Part of the Wanderlust series. A New World Pale Ale, based on hops from New Zealand and the USA. Tropical citrus aroma, slightly sweet on the palate.",
-    "id": "MagpieRoam",
-    "img": "/images/roam.png",
-    "name": "Magpie - Roam",
+    "alcohol": 3.8,
+    "description": "A fresh and zingy Pale Ale with a floral aroma. The biscuity malt flavours and citrus hops develop into a crisp dry finish.",
+    "id": "MagpieHoppily",
+    "img": "/images/hoppily.jpeg",
+    "name": "Magpie - Hoppily Ever After",
     "style": "Pale",
     "status": true
   },
